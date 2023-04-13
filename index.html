@@ -36,7 +36,7 @@
   <div class="box">
     <p id="text"></p>
   </div>
-  <audio id="audio" src="효과음 (2).mp3" controls autoplay style="display:none;"></audio>
+  <audio id="audio" src="잠긴 (2).mp3" autoplay style="display:none;"></audio>
 
   <script>
     const texts = [
@@ -57,7 +57,7 @@
       if (charIndex < texts[index].length) {
         textElement.textContent += texts[index].charAt(charIndex);
         charIndex++;
-            if (charIndex === 6) { // "배와 함께" 문자열 다음에 오디오 재생
+            if (charIndex === 7) { // "배와 함께" 문자열 다음에 오디오 재생
       const audio = document.getElementById("audio");
       audio.play();
     }
@@ -65,7 +65,7 @@
       } else {
         if (index === texts.length - 1 && charIndex === texts[index].length) {
   setTimeout(function() {
-    window.location.href = "http://127.0.0.1:5500/1/index.html"; // 이동하고자 하는 페이지의 URL을 입력하세요
+    window.location.href = "https://happy030day.github.io/dkseho2/"; // 이동하고자 하는 페이지의 URL을 입력하세요
   }, 500); // 몇 초 후에 이동할지를 설정할 수 있습니다 (위 코드는 2초 후에 이동)
 }
         setTimeout(function() {
